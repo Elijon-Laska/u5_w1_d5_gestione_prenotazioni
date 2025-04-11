@@ -36,19 +36,19 @@ public class PrenotazioneRunner implements CommandLineRunner {
         System.out.println("Avvio test prenotazioni...");
 
 
-        Utente utente1 = new Utente(1L, "elijon123", "Elijon ", "Rossi", "elijon.rossi@email.com", new ArrayList<>());
+        Utente utente1 = new Utente(null, "elijon123", "Elijon ", "Rossi", "elijon.rossi@email.com", new ArrayList<>());
         utenteRepository.save(utente1);
 
-        Edificio edificio = new Edificio(2L, "Epicode HQ", "Via Roma 123", "Roma", null);
+        Edificio edificio = new Edificio(null, "Epicode HQ", "Via Roma 123", "Roma", null);
         edificioRepository.save(edificio);
 
-        Postazione postazione1 = new Postazione(3L, "POST001", "Postazione privata con vista", TipoPostazione.PRIVATO, 2, edificio, null);
+        Postazione postazione1 = new Postazione(null, "POST001", "Postazione privata con vista", TipoPostazione.PRIVATO, 2, edificio, null);
         postazioneRepository.save(postazione1);
 
-        Utente utente2 = new Utente(4L, "marco456", "Marco ", "Verdi", "marco.verdi@email.com", new ArrayList<>());
+        Utente utente2 = new Utente(null, "marco456", "Marco ", "Verdi", "marco.verdi@email.com", new ArrayList<>());
         utenteRepository.save(utente2);
 
-        Postazione postazione2 = new Postazione(5L, "POST002", "Open space collaborativo", TipoPostazione.OPENSPACE, 4, edificio, null);
+        Postazione postazione2 = new Postazione(null, "POST002", "Open space collaborativo", TipoPostazione.OPENSPACE, 4, edificio, null);
         postazioneRepository.save(postazione2);
 
 
